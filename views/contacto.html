@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="../leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.css">
+    
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img id="logo" src="../images/logo.png" alt="Logotipo empresa">
+        <h1>Contacto</h1>
+        <!-- Barra de navegación -->
+        <nav>
+                <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li style="font-weight: bold"><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Información de contacto -->
+        <section id="contactInfo">
+            <h2>Información de contacto</h2>
+            <p><strong>Dirección:</strong> Avenida de los Pirineos, 28703,  San Sebastián de los Reyes, Madrid</p>
+            <p><strong>Teléfono:</strong> 91 123 45 67</p>
+            <p><strong>Email:</strong> contacto@tractorizados.com</p>
+        </section>
+
+        <!-- Mapa de ubicación -->
+        <section id="mapSection">
+            <h2>Ubicación y ruta</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <!-- Scripts y llamada a Leaflet Routing Machine -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../js/contacto.js"></script>
+    <script src="../leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script src="../leaflet-routing-machine-3.2.12/examples/Control.Geocoder.js"></script>
+
+    <!--Pie de página con los enlaces a redes sociales, dirección de la empresa e información legal-->
+  <footer>
+    <p id="follow">Síguenos en redes sociales:</p>
+    <a href="https://facebook.com"><img src="../images/facebook_logo.jpg" alt="Facebook" id="facebook_logo"></a>
+    <a href="https://twitter.com"><img src="../images/X_logo.jpg" alt="Twitter" id="X_logo"></a>
+    <a href="https://instagram.com"><img src="../images/instagram_logo.png" alt="Instagram" id="instagram_logo"></a>
+    <p>Tractorizados, Avenida de los Pirineos, 28703, San Sebastián de los Reyes, Madrid, España</p>
+    <p>Aviso legal: copyright Tractorizados 2024. Todos los derechos reservados</p>
+  </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de presupuesto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/presupuesto.js"></script>
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+        <img id="logo" src="../images/logo.png" alt="Logotipo empresa">
+        <h1>Formulario de presupuesto</h1>
+        <!--Barra de navegación-->
+        <nav>
+                <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li style="font-weight: bold"><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Formulario de Presupuesto -->
+        <form id="budgetForm">
+            <!-- Datos de Contacto -->
+            <section id="contactInfo">
+                <h2>Datos de contacto</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" maxlength="15" required><br>
+                
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" maxlength="40" required><br>
+                
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="text" id="telefono" maxlength="9" required><br>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" required>
+            </section>
+
+            <!-- Opciones de Presupuesto -->
+            <section id="presupuesto">
+                <h2>Presupuesto</h2>
+                
+                <!-- Productos -->
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto">
+                    <option value="3000">Pala frontal - 3000€</option>
+                    <option value="2500">Remolque - 2500€</option>
+                    <option value="1000">Arado - 1000€</option>
+                    <option value="4500">Empacadora - 4500€</option>
+                    <option value="5000">Sembradora - 5000€</option>
+                    <option value="500">Horquilla - 500€</option>
+                </select>
+                <br>
+                <!-- Plazo -->
+                <label for="plazo">Plazo de envío (meses):</label>
+                <input type="number" id="plazo" min="1" max="24" value="1">
+
+                <!-- Extras -->
+                <fieldset>
+                    <legend>Extras:</legend>
+                    <label><input type="checkbox" class="extra" value="100"> Transporte - 100€</label>
+                    <label><input type="checkbox" class="extra" value="50"> Instalación - 50€</label>
+                    <label><input type="checkbox" class="extra" value="30"> Garantía extra - 30€</label>
+                </fieldset>
+
+                <!-- Presupuesto final -->
+                <div>
+                    <strong>Presupuesto final: </strong>
+                    <span id="presupuestoFinal">0</span> €
+                </div>
+            </section>
+
+            <!-- Condiciones y envío -->
+            <section id="conditions">
+                <h2>Envío</h2>
+                <label id="cuadro"><input type="checkbox" id="acceptTerms"> Acepto las condiciones de privacidad</label>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </section>
+        </form>
+    </main>
+
+    <!--Pie de página con los enlaces a redes sociales, dirección de la empresa e información legal-->
+  <footer>
+    <p id="follow">Síguenos en redes sociales:</p>
+    <a href="https://facebook.com"><img src="../images/facebook_logo.jpg" alt="Facebook" id="facebook_logo"></a>
+    <a href="https://twitter.com"><img src="../images/X_logo.jpg" alt="Twitter" id="X_logo"></a>
+    <a href="https://instagram.com"><img src="../images/instagram_logo.png" alt="Instagram" id="instagram_logo"></a>
+    <p>Tractorizados, Avenida de los Pirineos, 28703, San Sebastián de los Reyes, Madrid, España</p>
+    <p>Aviso legal: copyright Tractorizados 2024. Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

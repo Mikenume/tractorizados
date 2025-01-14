@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    
+    <!-- Cabecera -->
+    <header>
+        <img id="logo" src="images/logo.png" alt="Logotipo empresa">
+        <h1>¡Bienvenido!</h1>
+        <!-- Barra de navegación-->
+        <nav>
+            <ul>
+                <li style="font-weight: bold"><a href="index.html">Inicio</a></li>
+                <li><a href="views/galeria.html">Galería</a></li>
+                <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secciones de la página -->
+    <main>
+        <!-- Sobre nosotros -->
+        <section class="index" id="about">
+            <h2>Sobre nosotros</h2>
+            <p>Somos una empresa especializada en accesorios para el tractor, desde remolques hasta empacadoras, pasando 
+                por arados, palas... todo lo que necesite para su tractor.
+            </p>
+            <img src="images/tractor-con-pala.jpg" alt="Tractor con pala">
+        </section>
+
+        <!-- Asesoría -->
+        <section class="index" id="services">
+            <h2>Asesoría</h2>
+            <p>Le ofrecemos servicios de asesoría personalizada para escoger los mejores accesorios para su tractor, 
+                totalmente compatibles y de primeras marcas.
+            </p>
+            <img src="images/asesoria.jpg" alt="Asesoría técnica">
+            
+        </section>
+
+        <!-- Asistencia técnica -->
+        <section class="index" id="contact">
+            <h2>Asistencia técnica</h2>
+            <p>También ofrecemos servicio de instalación y asistencia técnica a precios muy competitivos.</p>
+            <img src="images/herramientas.jpg" alt="Herramientas">
+        </section>
+
+        <!-- Noticias (se cargan dinámicamente desde un archivo JSON) -->
+        <section class="index" id="news">
+            <h2>Noticias</h2>
+            <div id="news-content">
+                <!-- Aquí se cargarán las noticias -->
+            </div>
+        </section>
+        
+    </main>
+
+    
+    <!--Pie de página con los enlaces a redes sociales, dirección de la empresa e información legal-->
+  <footer>
+    <p id="follow">Síguenos en redes sociales:</p>
+    <a href="https://facebook.com"><img src="images/facebook_logo.jpg" alt="Facebook" id="facebook_logo"></a>
+    <a href="https://twitter.com"><img src="images/X_logo.jpg" alt="Twitter" id="X_logo"></a>
+    <a href="https://instagram.com"><img src="images/instagram_logo.png" alt="Instagram" id="instagram_logo"></a>
+    <p>Tractorizados, Avenida de los Pirineos, 28703, San Sebastián de los Reyes, Madrid, España</p>
+    <p>Aviso legal: copyright Tractorizados 2024. Todos los derechos reservados</p>
+  </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img id="logo" src="../images/logo.png" alt="Logotipo empresa">
+        <h1>Galería de imágenes</h1>
+
+        <!-- Barra de navegación-->
+        <nav>
+                <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li style="font-weight: bold"><a href="galeria.html">Galería</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <!-- Galería de imágenes -->
+    <main>
+        <section id="gallery">
+            <h2>Explora nuestros productos</h2>
+            <div class="gallery-container">
+                <!-- Las imágenes se mostrarán aquí -->
+                <a href="../images/pala_frontal.jpg" data-lightbox="mygallery" data-title="Pala frontal"><img src="../images/pala_frontal.jpg" alt="Pala frontal"></a>
+                <a href="../images/remolque.jpg" data-lightbox="mygallery" data-title="Remolque"><img src="../images/remolque.jpg" alt="Remolque"></a>
+                <a href="../images/arado.jpg" data-lightbox="mygallery" data-title="Arado"><img src="../images/arado.jpg" alt="Arado"></a>
+                <a href="../images/empacadora.jpg" data-lightbox="mygallery" data-title="Empacadora"><img src="../images/empacadora.jpg" alt="Empacadora"></a>
+                <a href="../images/sembradora.jpg" data-lightbox="mygallery" data-title="Sembradora"><img src="../images/sembradora.jpg" alt="Sembradora"></a>
+                <a href="../images/horquilla.png" data-lightbox="mygallery" data-title="Horquilla"><img src="../images/horquilla.png" alt="Horquilla"></a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Scripts con enlace a librería Lightbox para la galería dinámica de imágenes-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!--Pie de página con los enlaces a redes sociales, dirección de la empresa e información legal-->
+  <footer>
+    <p id="follow">Síguenos en redes sociales:</p>
+    <a href="https://facebook.com"><img src="../images/facebook_logo.jpg" alt="Facebook" id="facebook_logo"></a>
+    <a href="https://twitter.com"><img src="../images/X_logo.jpg" alt="Twitter" id="X_logo"></a>
+    <a href="https://instagram.com"><img src="../images/instagram_logo.png" alt="Instagram" id="instagram_logo"></a>
+    <p>Tractorizados, Avenida de los Pirineos, 28703, San Sebastián de los Reyes, Madrid, España</p>
+    <p>Aviso legal: copyright Tractorizados 2024. Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
